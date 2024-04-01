@@ -7,4 +7,4 @@ if ! [ -d /var/cache/squid/00 ]; then
 fi
 
 # run
-/usr/sbin squid -z;  exec $(which squid) -f /etc/squid/squid.conf -NYCX
+/usr/sbin squid -z;  exec $(which squid) -f /etc/squid/squid.conf -NYC -d 9
