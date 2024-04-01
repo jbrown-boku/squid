@@ -1,0 +1,11 @@
+---
+services:
+  squid:
+    image: docker.ftc.io/squid:6.6
+    ports:
+      - 22999:22999
+    expose:
+      - 22999
+    volumes:
+     - /data/squid:/etc/squid
+    restart: always
